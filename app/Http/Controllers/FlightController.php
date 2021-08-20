@@ -45,7 +45,13 @@ class FlightController extends Controller
 
             return response()->json($data, 200);
         } catch (\Exception $e) {
-            return response()->json(['status' => 'error', 'msg' => $e->getMessage()], 500);
+            return response()->json([
+                'status' => 'error',
+                'error' => [
+                    'msg' => $e->getMessage()],
+                    'file' => $e->getFile(),
+                    'line' => $e->getLine(),
+            ], 500);
         }
     }
 }
