@@ -72,6 +72,8 @@ class FlightsService
                 }
             }
         }
+
+        usort($this->groups, array($this, 'compare'));
     }
 
     /**
@@ -102,6 +104,16 @@ class FlightsService
         $uniqueId .= implode('', array_column($i, 'id'));
         $uniqueId .= implode('', array_column($i, 'flightNumber'));
         return base64_encode($uniqueId);
+    }
+
+    /**
+     * @param $a
+     * @param $b
+     * @return bool
+     */
+    private function compare($a, $b): bool
+    {
+        return $a['totalPrice'] > $b['totalPrice'];
     }
 
 }
