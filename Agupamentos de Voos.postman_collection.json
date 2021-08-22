@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "88dec1df-a898-48e6-8b06-e43ad53e133c",
+		"name": "Agupamentos de Voos",
+		"description": "# Visão geral\nA API retorna voos agrupados em voos de ida e volta, tarifa e preços, após uma consulta a outra API externa.\n\n# Descrição\nA API foi construída utilizando o framework Laravel `8.55`.\n\n# Requisitos\n\n- PHP maior ou igual 7.3.0\n- composer\n\n## Laravel \n- PHP >= 7.3\n- BCMath PHP Extension\n- Ctype PHP Extension\n- Fileinfo PHP Extension\n- JSON PHP Extension\n- Mbstring PHP Extension\n- OpenSSL PHP Extension\n- PDO PHP Extension\n- Tokenizer PHP Extension\n- XML PHP Extension\n\n# Instalação\nClonar o projeto\n\n```bash\ngit clone git@github.com:wandsdev/avaliacao_123milhas.git\n```\n\nInstalar as dependências através do composer\n```bash\ncomposer install\n```\nCriar o arquivo `.env`\n```bash\ncp .env.example .env\n```\nGerar chave da applicação Laravel\n```bash\nphp artisan key:generate\n```\n\nIniciar o servidor local\n```bash\nphp artisan serve\n```\n\n# Autenticação\nNão é necessário autenticação\n\n# Rotas\nA API disponibiliza apenas uma rota\n\npath: **\"/flights-grouping\"**\n\nTipo: **GET**\n```\nhttp://127.0.0.1:8000/api/flights-grouping / https://www.wandsdev.tech/api/flights-grouping\n```\n\nExemplo de response\n```json\n{\n    \"flights\": [...],\n    \"groups\": [\n        {\n            \"uniqueId\": \"MTIzRzMtMTcwMUFELTExMTFMQS0yMjIyOTEwTEEtNTU1NUFELTY2MDY=\",\n            \"totalPrice\": 200,\n            \"outbound\": [\n                {\n                    \"id\": 1,\n                    \"cia\": \"GOL\"\n                }\n            ],\n            \"inbound\": [\n                {\n                    \"id\": 9,\n                    \"cia\": \"LATAM\"\n                }\n            ]\n        }\n    ],\n    \"totalGroups\": 10,\n    \"totalFlights\": 15,\n    \"cheapestPrice\": 200,\n    \"cheapestGroup\": \"MTIzRzMtMTcwMUFELTExMTFMQS0yMjIyOTEwTEEtNTU1NUFELTY2MDY=\"\n}\n```",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ambiente local",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/flights-grouping",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"flights-grouping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ambiente de produção",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.wandsdev.tech/api/flights-grouping",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wandsdev",
+						"tech"
+					],
+					"path": [
+						"api",
+						"flights-grouping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
