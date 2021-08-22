@@ -58,9 +58,18 @@ A API disponibiliza apenas uma rota
 
 path: **"/flights-grouping"**
 
+Ambiente local
+
 Tipo: **GET**
 ```
-http://127.0.0.1:8000/api/flights-grouping / https://www.wandsdev.tech/api/flights-grouping
+http://127.0.0.1:8000/api/flights-grouping
+```
+
+Ambiente de produção
+
+Tipo: **GET**
+```
+https://www.wandsdev.tech/api/flights-grouping
 ```
 
 Exemplo de response
