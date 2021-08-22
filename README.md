@@ -2,7 +2,7 @@
 
 **Postman Collection:** <https://www.getpostman.com/collections/10a3b9ca381ec5f3d84d>
 <br>
-*Nota: A collection do postamn se encontra na raiz desse respositório*
+*Nota: A collection do postman se encontra na raiz desse respositório*
 <br>
 
 # Visão geral
