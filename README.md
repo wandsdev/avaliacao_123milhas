@@ -60,7 +60,7 @@ path: **"/flights-grouping"**
 
 Tipo: **GET**
 ```
-http://127.0.0.1:8000/api/flights-grouping
+http://127.0.0.1:8000/api/flights-grouping / https://www.wandsdev.tech/api/flights-grouping
 ```
 
 Exemplo de response
