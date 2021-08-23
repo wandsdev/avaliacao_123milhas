@@ -54,7 +54,7 @@
                             <div class="flex items-center">
                                 <div class="ml-4 text-lg leading-7 font-semibold">
                                     <a target="_blank" href="http://127.0.0.1:8000/api/flights-grouping" class="text-gray-900 dark:text-white">
-                                        Voos agrupados
+                                        Voos agrupados (ambiente local)
                                     </a>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                             <div class="flex items-center">
                                 <div class="ml-4 text-lg leading-7 font-semibold">
                                     <a target="_blank" href="https://www.wandsdev.tech/api/flights-grouping" class="text-gray-900 dark:text-white">
-                                        Voos agrupados
+                                        Voos agrupados (ambiente de produção)
                                     </a>
                                 </div>
                             </div>
