@@ -2,6 +2,8 @@
 
 **Postman Collection:** <https://www.getpostman.com/collections/10a3b9ca381ec5f3d84d>
 <br>
+*Nota: A collection do postman se encontra na raiz desse respositório*
+<br>
 
 # Visão geral
 A API retorna voos agrupados em voos de ida e volta, tarifa e preços, após uma consulta a outra API externa.
